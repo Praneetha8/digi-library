@@ -8,16 +8,19 @@
  *
  * Main module of the application.
  */
-angular
+(function(){
+  angular
   .module('mylibraryApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+    'ngTouch',
+    'ui.router',
+    'ngMaterial'
+  ]) ;
+  /*.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -32,4 +35,20 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  });*/
+   angular.module('mylibraryApp').config(function ($stateProvider, $urlRouterProvider) {
+     
+  
+   /*$urlRouterProvider.when('/','/main')*/
+      /*$urlRouterProvider.otherwise('/main')*/
+     
+      $stateProvider
+      .state('main', {
+            url: "/main",
+            templateUrl: "views/main.html",
+            controller:'MainCtrl'
+        })
+   $urlRouterProvider.otherwise('/main')
+    });
+
+    })();
