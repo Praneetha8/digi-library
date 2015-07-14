@@ -14,14 +14,33 @@
        
       .form-container{
         position: relative;
-        top: 25%
-       }
+        top: 25%;
 
-     .form{
-     border: 1px solid #bbb;
-  border-radius: 3px;
-  background-color: white;
-    }
+      .form{
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        background-color: white;
+         }
+      }
   }
 
+  .close{
+  cursor:pointer;
+  }
+
+  .fa-remove:before, .fa-close:before, .fa-times:before{
+  float:right;
+  }
+  .create-account{
+  text-align:center;
+  cursor:pointer;
+  }
+
+  md-dialog md-dialog-content{
+  padding: 0px 24px;
+  }
+
+  .md-toolbar-tools > .md-button:last-child {
+  margin-right: 25px;
+}
   

@@ -1,34 +1,30 @@
 <div class="login-page-container">
-  <div class="form-container" layout="row" >
-      <form class="form" name="userForm" layout="column" layout-padding flex="50" flex offset="25">
-        <i class="fa fa-remove close"
-               data-dismiss="modal"
-               ng-click="$parent.$close()">
-            </i>
+ <div class="form-container" layout="row" ng-hide="hideForm">
+   <form class="form" name="userForm" layout="column" layout-padding flex="30" flex offset="35">
+        
         <md-input-container>
-          <label>User Name</label>
-            <input name="lastName" ng-model="lastName" required >
-              <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+          <label>Email</label>
+            <input name="email" ng-model="email" required >
+              <div ng-messages="userForm.email.$error" ng-show="userForm.email.$dirty">
                 <div ng-message="required">This is required!</div>
               </div>
         </md-input-container>
 
         <md-input-container>
           <label>Password</label>
-            <input name="bio" ng-model="biography" required >
-              <div ng-messages="userForm.bio.$error" ng-show="userForm.bio.$dirty">
+            <input name="password" ng-model="password" required >
+              <div ng-messages="userForm.password.$error" ng-show="userForm.password.$dirty">
                 <div ng-message="required">This is required!</div>
               </div>
         </md-input-container>
+        
+        <div layout="row">
+        <md-button class="md-raised md-primary" flex> Sign In </md-button>
+        </div>
 
-
-        <md-input-container>
-          <label>Confirm Your Password</label>
-          <input placeholder="title" ng-model="title">
-        </md-input-container>
-
-        <md-button class="md-raised md-primary"> Sign In </md-button>
-
+        <p class="create-account"  ng-click="showSignUpModal($event)">Create Account?</p>
       </form>
-  </div>
+
+ </div>
+ 
 </div>
