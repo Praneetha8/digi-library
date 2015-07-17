@@ -1,0 +1,23 @@
+[
+	{
+		"id":1,
+		"name": "Rasika Adawatkar",
+		"username": "rasika",
+		"password": "password",
+		"role":"admin"
+	},
+	{
+		"id":2,
+		"name": "Praneetha Sattiraju",
+		"username": "praneetha",
+		"password": "password",
+		"role":"admin"
+	},
+	{
+		"id":3,
+		"name": "Garima Sharma",
+		"username": "garima",
+		"password": "password",
+		"role":"user"
+	}
+]  

@@ -1,0 +1,33 @@
+[
+
+	{
+		"bookId":1,
+		"bookName":"ABC",
+		"bookDescription":"first book",
+		"bookReview":"ok",
+		"bookRating":"",
+		"bookAvailability":""
+		
+	},
+
+	{
+		"bookId":2,
+		"bookName":"DEF",
+		"bookDescription":"second book",
+		"bookReview":"one time read",
+		"bookRating":"",
+		"bookAvailability":""
+		
+	},
+
+	{
+		"bookId":3,
+		"bookName":"GHI",
+		"bookDescription":"third book",
+		"bookReview":"must read",
+		"bookRating":"",
+		"bookAvailability":""
+		
+	}
+
+]

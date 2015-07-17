@@ -1,0 +1,80 @@
+<md-dialog>
+  
+    <div class="md-toolbar-tools">
+      Sign Up to Create Your Account !!
+     <span flex></span>
+     <md-button class="md-icon-button" ng-click="hide()">
+     <md-icon md-svg-src="../../bower_components/material-design-icons/navigation/svg/design/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+  </md-button>
+   </div>
+ 
+ 
+  <md-dialog-content>
+   <!-- <div class="form-container" layout="row" ng-hide="hideForm"> -->
+      <!-- <md-dialog> -->
+      <form class="form" name="userForm" layout="column" layout-padding flex="40" >
+       <!--  <div class="fa fa-times close" ng-click="hideForm=true"></div> -->
+       <div layout="row">
+        <md-input-container flex>
+          <label>First Name</label>
+            <input type="text" name="firstName" ng-model="firstName" required >
+              <div ng-messages="userForm.firstName.$error" ng-show="userForm.firstName.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+
+         <md-input-container flex>
+          <label>Last Name</label>
+            <input type="text" name="lastName" ng-model="lastName" required >
+              <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+        </div>
+
+         <md-input-container>
+          <label>Email Address</label>
+            <input type="email" name="email" ng-model="email" required >
+              <div ng-messages="userForm.email.$error" ng-show="userForm.email.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+        
+        <div layout="row">
+        <md-input-container flex>
+          <label>Password</label>
+            <input type="password" name="password" ng-model="password" required >
+              <div ng-messages="userForm.password.$error" ng-show="userForm.password.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+
+
+        <md-input-container flex>
+          <label>Confirm Your Password</label>
+          <input type="password" name="repassword" ng-model="repassword">
+           <div ng-messages="userForm.repassword.$error" ng-show="userForm.repassword.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+        </div>
+
+        <md-input-container>
+          <label>Phone Number</label>
+            <input type="text" name="phno" ng-model="phno" required >
+              <div ng-messages="userForm.phno.$error" ng-show="userForm.phno.$dirty">
+                <div ng-message="required">This is required!</div>
+              </div>
+        </md-input-container>
+
+          <div class="md-actions" layout="row">
+            <span flex></span> 
+              <md-button class=" md-raised md-primary" ng-click="answer()">
+                Sign Up
+              </md-button>
+          </div>
+      </form>
+    <!-- </md-dialog> -->
+<!-- </div> -->
+  </md-dialog-content>
+</md-dialog>

@@ -1,10 +1,11 @@
 <div class="login-page-container">
+  <div class="signUpMessage" ng-show="signUp">You have Signed Up successfully.....</div>
+<div class="message">Sign In to Enter the Library</div>
  <div class="form-container" layout="row" ng-hide="hideForm">
    <form class="form" name="userForm" layout="column" layout-padding flex="30" flex offset="35">
-        
         <md-input-container>
           <label>Email</label>
-            <input name="email" ng-model="email" required >
+            <input type="email" name="email" ng-model="email" required >
               <div ng-messages="userForm.email.$error" ng-show="userForm.email.$dirty">
                 <div ng-message="required">This is required!</div>
               </div>
@@ -12,19 +13,20 @@
 
         <md-input-container>
           <label>Password</label>
-            <input name="password" ng-model="password" required >
+            <input type="password" name="password" ng-model="password" required >
               <div ng-messages="userForm.password.$error" ng-show="userForm.password.$dirty">
                 <div ng-message="required">This is required!</div>
               </div>
         </md-input-container>
-        
+      
         <div layout="row">
-        <md-button class="md-raised md-primary" flex> Sign In </md-button>
+          <md-button class="md-raised md-primary" flex ng-click="signIn()" >Sign In</md-button>
         </div>
 
-        <p class="create-account"  ng-click="showSignUpModal($event)">Create Account?</p>
+        <p class="create-account" ng-click="showSignUpModal($event)">Create Account?</p>
       </form>
 
  </div>
+
  
 </div>

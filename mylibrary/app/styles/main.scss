@@ -11,12 +11,21 @@
      //width:1280px;
      //height:100%;
      height: 923px;
-       
-      .form-container{
+     
+       .message {
+        text-align: center;
+        font-size: 33px;
         position: relative;
-        top: 25%;
+        top: 248px;
+        font-family: Bradley Hand ITC;
+        font-weight: bold
+        }  
 
-      .form{
+      .form-container {
+        position: relative;
+        top: 30%;
+
+      .form {
         border: 1px solid #bbb;
         border-radius: 3px;
         background-color: white;
@@ -24,9 +33,7 @@
       }
   }
 
-  .close{
-  cursor:pointer;
-  }
+ 
 
   .fa-remove:before, .fa-close:before, .fa-times:before{
   float:right;
@@ -34,6 +41,7 @@
   .create-account{
   text-align:center;
   cursor:pointer;
+  outline:0;
   }
 
   md-dialog md-dialog-content{
@@ -43,4 +51,10 @@
   .md-toolbar-tools > .md-button:last-child {
   margin-right: 25px;
 }
-  
+
+.signUpMessage{
+  position: relative;
+  top: 22%;
+  left: 40%;
+  z-index: 10000;
+}
